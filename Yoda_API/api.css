@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(160, 212, 160);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(65, 143, 65);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  border-style: none;
+  justify-items: center;
+  align-items: center;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+textarea {
+  width: 90vw;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  border-width: 3px;
+}
+
+#input {
+  border-color: dodgerblue;
+}
+
+#input:focus {
+  border-color: blue;
+}
+
+#output {
+  border-color: rgb(65, 143, 65);
+}
