@@ -28,13 +28,14 @@ function editTask(e){
         let edited = e.target.parentNode.childNodes[0].data;
         task.value = edited;
         if(addBtn_value === "edit"){
-        addBtn.onclick = function change(){
-        e.target.parentNode.childNodes[0].data = task.value;
-        task.value = '';
-        addBtn_value = "add";
+            addBtn.onclick = function change(){
+                e.target.parentNode.childNodes[0].data = task.value;
+                addBtn_value = 'add';
+                task.value = '';
+            }
         }
-        } 
-    }
+    } 
+    
 }
 
 function getResult(){
@@ -51,8 +52,6 @@ function getResult(){
         document.getElementById("task_list").appendChild(li);
     }
     task.value = '';
-
-    //let span = document.createElement("span");
 
     let edit_btn = document.createElement("button");
     let del_btn = document.createElement("button");
