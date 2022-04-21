@@ -1,0 +1,124 @@
+h1 {
+  color: #bb271d;
+  text-align: center;
+  font-size: 4rem;
+  padding: 20px 30px;
+}
+
+.icon {
+  width: 5rem;
+  align-content: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  background: rgb(231, 243, 247);
+  font-size: 1.8rem;
+  transition: 0.2s;
+  padding: 1.2rem 0.8rem 1.2rem 4rem;
+  list-style: none;
+}
+
+ul li:nth-child(even) {
+  background: white;
+}
+
+ul li:hover {
+  background: rgb(236, 227, 174);
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 1.3rem;
+  left: 1.6rem;
+  transform: rotate(45deg);
+  height: 1.5rem;
+}
+
+.edit {
+  background-color: rgba(63, 184, 79, 0.815);
+  font-size: 1rem;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  float: right;
+}
+
+.edit:hover {
+  background-color: darkolivegreen;
+  font-weight: bold;
+  color: black;
+}
+
+.close {
+  background-color: rgb(197, 48, 48);
+  font-size: 1rem;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  float: right;
+}
+
+.close:hover {
+  background-color: #f44336;
+  font-weight: bold;
+  color: black;
+}
+
+.add {
+  width: 15rem;
+  background: dodgerblue;
+  color: rgb(247, 245, 250);
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2rem;
+  padding: 10px;
+}
+
+.add:hover {
+  background-color: #402abe;
+}
+
+#new_task {
+  border: 3px solid lightcyan;
+  border-radius: 4rem;
+  width: 60rem;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.list {
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .btn {
+  float: right;
+  padding-right: 5rem;
+} */

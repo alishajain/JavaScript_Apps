@@ -2,12 +2,21 @@
 let task = document.getElementById("new_task");
 let addBtn = document.querySelector("#add");
 let output = document.getElementById("task_list");
+let list = document.querySelector('ul');
 let addBtn_value = "add";
+
+list.addEventListener('click', function(e) {
+    if(e.target.tagName === 'LI'){
+        e.target.classList.toggle('checked');
+        console.log("checked");
+    }
+}, false);
+
 function delTask(e){
     console.log("task deleted");
     if(e.target.classList.contains("close")){
         let li = e.target.parentNode;
-        task_list.removeChild(li);
+        output.removeChild(li);
     }
 }
 
@@ -43,6 +52,8 @@ function getResult(){
     }
     task.value = '';
 
+    //let span = document.createElement("span");
+
     let edit_btn = document.createElement("button");
     let del_btn = document.createElement("button");
 
@@ -54,12 +65,12 @@ function getResult(){
     
     edit_btn.appendChild(edit);
     del_btn.appendChild(del);
-
+    
     li.appendChild(edit_btn);
     li.appendChild(del_btn);
 
-    del_btn.addEventListener("click", delTask);
     edit_btn.addEventListener("click", editTask);
+    del_btn.addEventListener("click", delTask);
 }
 }
 
