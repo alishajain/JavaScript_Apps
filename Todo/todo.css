@@ -3,10 +3,12 @@ body {
   background-size: cover;
 }
 h1 {
-  color: hsl(4, 72%, 72%);
+  color: rgb(32, 25, 25);
   text-align: left;
   font-size: 4rem;
   padding: 20px 30px;
+  font-style: italic;
+  font-family: cursive;
 }
 
 .icon {
